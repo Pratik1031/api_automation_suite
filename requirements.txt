@@ -1,0 +1,9 @@
+requests==2.31.0
+pytest==7.4.3
+pytest-html==4.1.1
+pytest-xdist==3.5.0
+# pydantic==2.4.2
+python-dotenv==1.0.0
+allure-pytest==2.13.2git remote add origin https://github.com/Pratik1031/api_automation_suite.git
+jsonschema==4.20.0
+faker==21.0.0
