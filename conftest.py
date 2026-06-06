@@ -28,4 +28,4 @@ def created_post(client):
     response = client.post("/posts", valid_post_payload())
     post = response.json()
     yield post
-    client.delete(f"/posts/{post['id']}")
+    client.delete(f"/posts/{post['userId']}")

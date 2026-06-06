@@ -140,12 +140,12 @@ class TestUpdatePost:
     @pytest.mark.positive
     def test_put_post_returns_200(self, client, created_post):
         payload = {
-            "id": created_post["id"],
+            "id": created_post["userId"],
             "userId": 1,
             "title": "Updated Title",
             "body": "Updated body content",
         }
-        response = client.put(f"/posts/{created_post['id']}", payload)
+        response = client.put(f"/posts/{created_post['userId']}", payload)
         assert_status(response, 200)
 
     @pytest.mark.positive
